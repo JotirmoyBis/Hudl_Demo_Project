@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Huld_Demo_Project">
+
+		<listeners>
+		<listener class-name="com.hudl.ExtentReportListener.ExtentReportListener" />
+		</listeners>
+  
+  <test name="Log In to Hudl and Verify Successful Login">
+      
+      <classes>
+      	<class name="com.hudl.testcases.LoginPageTest"></class>
+      	<class name="com.hudl.testcases.HomePageTest"></class>
+      </classes>
+      
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Huld_Demo_Project]">
+  <listeners>
+    <listener class-name="com.hudl.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test name="Log In to Hudl and Verify Successful Login">
+    <classes>
+      <class name="com.hudl.testcases.LoginPageTest"/>
+      <class name="com.hudl.testcases.HomePageTest"/>
+    </classes>
+  </test> <!-- Log In to Hudl and Verify Successful Login -->
+  <test name="Log In to Hudl and Verify Successful Login(failed)">
+    <classes>
+      <class name="com.hudl.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hudl.testcases.LoginPageTest -->
+      <class name="com.hudl.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="verifyHomepageTitleTest"/>
+        </methods>
+      </class> <!-- com.hudl.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Log In to Hudl and Verify Successful Login(failed) -->
+</suite> <!-- Failed suite [Huld_Demo_Project] -->
