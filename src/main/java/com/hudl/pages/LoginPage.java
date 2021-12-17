@@ -13,7 +13,6 @@ public class LoginPage extends TestBase {
 	
 	@FindBy(id = "email")
 	
-	// Optional to Improve the performance
 	
 	@CacheLookup
 	WebElement email;

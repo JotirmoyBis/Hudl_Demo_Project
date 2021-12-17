@@ -26,7 +26,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir") +("\\src\\main\\java\\com\\hudl\\config\\config.properties"));
-
+			
 			prop.load(ip);
 			
 		} catch (FileNotFoundException e) {
@@ -39,10 +39,13 @@ public class TestBase {
 
 	@SuppressWarnings("deprecation")
 	public static void initialization() {
+
 		String browserName = prop.getProperty("browser");
+		String chromepath = System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe";
 		if(browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:/Users/jotirmoybiswas/Downloads/chromedriver_win32/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",chromepath);
 			driver = new ChromeDriver();
+		
 		}else if(browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\jotirmoybiswas\\Downloads\\geckodriver");
 			driver = new FirefoxDriver();

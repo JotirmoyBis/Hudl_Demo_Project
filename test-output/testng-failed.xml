@@ -12,12 +12,6 @@
   </test> <!-- Log In to Hudl and Verify Successful Login -->
   <test name="Log In to Hudl and Verify Successful Login(failed)">
     <classes>
-      <class name="com.hudl.testcases.LoginPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.hudl.testcases.LoginPageTest -->
       <class name="com.hudl.testcases.HomePageTest">
         <methods>
           <include name="tearDown"/>
@@ -25,6 +19,12 @@
           <include name="verifyHomepageTitleTest"/>
         </methods>
       </class> <!-- com.hudl.testcases.HomePageTest -->
+      <class name="com.hudl.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hudl.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Log In to Hudl and Verify Successful Login(failed) -->
 </suite> <!-- Failed suite [Huld_Demo_Project] -->
