@@ -42,9 +42,5 @@ public class LoginPageTest extends TestBase{
 	public void tearDown() {
 		driver.quit();
 	}
-
-	
-	
-	
 }
 

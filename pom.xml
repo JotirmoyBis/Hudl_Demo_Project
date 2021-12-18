@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>hudl_DemoProject</name>
+  <name>hudl_DemoProjectmyte4 n3d3nb  n  ffb</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -31,9 +31,6 @@
     <scope>compile</scope>
 </dependency>
 
-
-
-
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
@@ -50,7 +47,6 @@
     <version>5.0.0</version>
 </dependency>
 
-
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml-schemas</artifactId>
@@ -64,29 +60,13 @@
     <version>4.1.2</version>
 </dependency>
 
-
-
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
 <dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>4.1.2</version>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
 </dependency>
-
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml</artifactId>
-    <version>4.1.2</version>
-</dependency>
-
-<dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>openxml4j</artifactId>
-    <version>1.0-beta</version>
-</dependency>
-
-
 
  </dependencies>
-
 
 </project>

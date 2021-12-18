@@ -1,4 +1,4 @@
-package com.hudl.ExtentReportListener;
+package com.hudl.report;
 
 import java.io.File;
 import java.util.Calendar;

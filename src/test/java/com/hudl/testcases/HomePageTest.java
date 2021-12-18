@@ -9,11 +9,13 @@ import org.testng.annotations.Test;
 import com.hudl.base.TestBase;
 import com.hudl.pages.HomePage;
 import com.hudl.pages.LoginPage;
+import com.hudl.util.TestUtil;
 
 public class HomePageTest extends TestBase{
 	
 	LoginPage loginPage;
 	HomePage homePage;
+	TestUtil testUtil = new TestUtil();
 	
 	public HomePageTest() {
 		super();
@@ -24,7 +26,8 @@ public class HomePageTest extends TestBase{
 	public void setUp() {
 		initialization();
 		 loginPage = new LoginPage();
-		 homePage = loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
+		 String decrypted = testUtil.decryptedKey(prop.getProperty("password"));
+		 homePage = loginPage.login(prop.getProperty("username"),decrypted);
 	}
 
     @Test (priority=2)

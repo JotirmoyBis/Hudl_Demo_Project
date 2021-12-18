@@ -3,7 +3,7 @@
 <suite name="Huld_Demo_Project">
 
 		<listeners>
-		<listener class-name="com.hudl.ExtentReportListener.ExtentReportListener" />
+		<listener class-name="com.hudl.report.ExtentReportListener" />
 		</listeners>
   
   <test name="Log In to Hudl and Verify Successful Login">
